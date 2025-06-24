@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/heschmat/flask-app-devops.git
+    repoURL: https://github.com/gesatessa/flask-app-devops.git
     targetRevision: main  # Or whatever branch/tag you want to track
     path: k8s/manifests
 
