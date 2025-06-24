@@ -15,14 +15,14 @@ next_checkin_time = datetime.utcnow()
 
 @app.route("/health_check")
 def health_check():
-    return "OK!"
+    return "OK!!!"
 
 
 @app.route("/readiness_check")
 def readiness_check():
     try:
         db.session.execute(text("SELECT 1"))
-        return "OK!"
+        return "OK!!!"
     except Exception as e:
         app.logger.error(e)
         return "failed", 500
